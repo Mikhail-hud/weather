@@ -7,6 +7,7 @@ const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', search);
 searchbox.addEventListener('touchstart', search);
 
+
 function search () {
     let int = searchbox.value;
     fetch(`${api.base}weather?q=${int}&appid=${api.key}`)
