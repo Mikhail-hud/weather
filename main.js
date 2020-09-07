@@ -4,7 +4,7 @@ const api = {
 }
   
 const searchbox = document.querySelector('.search-box');
-searchbox.addEventListener('keypress', search);
+searchbox.addEventListener('keypress','touchstart', search);
 
 function search () {
     let int = searchbox.value;
